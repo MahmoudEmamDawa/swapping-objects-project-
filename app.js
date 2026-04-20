@@ -532,17 +532,6 @@ function toggleTheme() {
   if (btn) btn.textContent = isDark ? '☀️' : '🌙';
 }
 
-// ===== LANG =====
-function toggleLang() {
-  const html = document.documentElement;
-  const btn = document.getElementById('langToggle');
-  if (!btn) return;
-  const isArabic = html.dir === 'rtl';
-  html.dir = isArabic ? 'ltr' : 'rtl';
-  html.lang = isArabic ? 'en' : 'ar';
-  btn.textContent = isArabic ? 'EN' : 'AR';
-}
-
 // ===== MOBILE MENU =====
 function toggleMobileMenu() {
   const menu = document.getElementById('mobileMenu');
