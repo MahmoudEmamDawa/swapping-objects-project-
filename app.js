@@ -532,6 +532,7 @@ function toggleTheme() {
   if (btn) btn.textContent = isDark ? '☀️' : '🌙';
 }
 
+
 // ===== MOBILE MENU =====
 function toggleMobileMenu() {
   const menu = document.getElementById('mobileMenu');
@@ -1009,7 +1010,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Expose globals needed by inline handlers
 window.toggleTheme = toggleTheme;
-window.toggleLang = toggleLang;
 window.toggleMobileMenu = toggleMobileMenu;
 window.updatePhotoCount = updatePhotoCount;
 window.escapeHtml = escapeHtml;
